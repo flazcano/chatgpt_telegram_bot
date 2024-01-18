@@ -69,8 +69,8 @@ spec:
             path: config.yml
           - key: chat_modes.yml
             path: chat_modes.yml
-          # - key: models.yml
-          #   path: models.yml
+          - key: models.yml
+            path: models.yml
       nodeSelector:
         {{- toYaml . | nindent 8 }}
       {{- end }}
