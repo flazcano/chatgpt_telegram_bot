@@ -46,12 +46,12 @@ spec:
               protocol: TCP
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
-      - name: mongo
-          image: "mongo:latest"
-          ports:
-            - name: mongo
-              containerPort: 27017
-              protocol: TCP
+        - name: mongo
+            image: "mongo:latest"
+            ports:
+              - name: mongo
+                containerPort: 27017
+                protocol: TCP
       {{- with .Values.nodeSelector }}
       volumes:
       - name: application-config
