@@ -96,7 +96,7 @@ applicationConfigYaml: |
   gpt_price_per_1000_tokens: 0.02
   whisper_price_per_1_min: 0.006
 
-env:
+env: |
   MONGODB_PORT: 27017
   MONGO_EXPRESS_PORT: 8081
   MONGO_EXPRESS_USERNAME: username
