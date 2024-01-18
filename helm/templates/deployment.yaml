@@ -57,6 +57,8 @@ spec:
         configMap:
           name: application-config
           items:
+          - key: config.env
+            path: config.env
           - key: config.yml
             path: config.yml
           - key: chat_modes.yml

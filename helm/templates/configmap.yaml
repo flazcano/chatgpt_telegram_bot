@@ -5,6 +5,9 @@ metadata:
   labels:
     {{- include "bot.labels" . | nindent 4 }}
 data:
+  config.env: |
+{{ .Values.env | indent 4 }}
+
   config.yml: |
 {{ .Values.applicationConfigYaml | indent 4 }}
 
