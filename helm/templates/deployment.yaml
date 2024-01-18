@@ -67,8 +67,8 @@ spec:
             path: config.env
           - key: config.yml
             path: config.yml
-          # - key: chat_modes.yml
-          #   path: chat_modes.yml
+          - key: chat_modes.yml
+            path: chat_modes.yml
           # - key: models.yml
           #   path: models.yml
       nodeSelector:
