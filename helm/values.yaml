@@ -85,7 +85,6 @@ applicationConfigYaml: |
   telegram_token: ""
   openai_api_key: ""
   openai_api_base: ""
-  mongodb_uri: ""
   use_chatgpt_api: true
   allowed_telegram_usernames: []
   new_dialog_timeout: 600
@@ -96,5 +95,8 @@ applicationConfigYaml: |
   gpt_price_per_1000_tokens: 0.02
   whisper_price_per_1_min: 0.006
 
-env: |
+envFile: |
   MONGODB_PORT=27017
+
+env: 
+  OPENAI_API_BASE: http://api:8080/v1
