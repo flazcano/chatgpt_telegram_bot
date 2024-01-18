@@ -75,7 +75,7 @@ data:
         type: audio
         price_per_1_min: 0.006
 
-  chat_modes.yml: |
+  # chat_modes.yml: |
     assistant:
       name: 👩🏼‍🎓 General Assistant
       model_type: text
